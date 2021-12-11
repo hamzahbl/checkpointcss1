@@ -1,0 +1,157 @@
+NOTES TO PAY ATTENTION TO IN CSS :
+
+
+
+there is 3 ways to connect css to html :
+internal : by using STYLE attributs IN HTML
+external : by maling another indépedant css file 
+intile : by using <style >
+
+
+3 BASIC kinds  SELECTORS ARE IN CSS :
+type selectors
+ are used to select HTML elements by element name. 
+class selectors
+ are used to select HTML elements by a specific class value. 
+id selectors
+ are used to select an HTML element associated with a specific id value.
+
+
+
+the id selector when it is used in the css it has to be proceded by #
+
+
+il ya aussi la notion d'heritage(parent,fils) dans css et elle est ecrite utilisant >
+article > p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}
+
+
+
+
+Adjacent sibling Combinator:
+dans ce type de heritage on utilise (+)dans css 
+
+General sibling Combinator :
+dans ce type de heritage on utilise (~)dans css 
+
+css pseudo 
+/* unvisited link */
+      a:link {
+          color: tomato;
+      }
+
+      /* visited link */
+      a:visited {
+          color: tomato;
+      }
+
+      /* mouse over element */
+      div:hover {
+          color: tomato;
+      } 
+
+      /* selected link */
+      a:active{
+          color: #0000FF
+      }
+se sont des actions que je veux les affecter selon le demande 
+
+
+
+
+
+The CSS box model is defined by these four layers:
+
+Content: the content of the box, where text and images appear
+Padding: the padding is transparent, clears an area around the content.
+Border: a border that goes around the padding and content. We have already seen it earlier.
+Margin: clears an area outside the border. The margin is transparent.
+
+
+
+
+THE BORDER :
+border-width: Specifies the thickness of the border.
+<length>: A numeric value measured in px, em, rem, vh and vw units.
+thin: The equivalent of 1px
+medium: The equivalent of 3px
+thick: The equivalent of 5px
+border-style: Specifies the type of line drawn around the element, including:
+solid: A solid, continuous line.
+none (default): No line is drawn.
+hidden: A line is drawn, but not visible. this can be useful for adding a little extra width to an element without displaying a border.
+dashed: A line that consists of dashes.
+dotted: A line that consists of dots.
+double: Two lines are drawn around the element.
+groove: Adds a bevel based on the color value in a way that makes the element appear pressed into the document.
+idge: Similar to groove, but reverses the color values in a way that makes the element appear raised.
+inset: Adds a split tone to the line that makes the element appear slightly depressed.
+outset: Similar to inset, but reverses the colors in a way that makes the element appear slightly raised.
+color: Specifies the color of the border and accepts <rgb()>, <rgba()>, <code><hsl()>, <hsla()>, <hex-color>, <named-color>
+
+
+
+bordur radius : 
+c'est la forme de la bordure ( tnajem tekhtar kima theb )
+
+
+
+
+
+Color
+
+It changes the text color, it accepts a named color, hexadecimal value and rgb value.
+
+ color: rgb(0, 0, 255);
+  /* same as
+  color: blue;
+  color: #0000ff;
+  color: #00f;
+  color: hsl(0, 100%, 50%); */
+Font-style
+
+It's used to turn italic text on and off. Possible values are as follows (you'll rarely use this, unless you want to turn some italic styling off for some reason).
+
+ font-style: bold;
+/*
+other possible value
+ font-style:normal;
+ font-style:italic;
+ font-style:oblique;
+*/
+Font-weight
+It sets how bold the text is. This has many values available in case you have many font variants available (such as -light, -normal, -bold, -extrabold, -black, etc.), but, realistically, you'll rarely use any of them except for normal and bold.
+
+ font-weight: normal;
+/*
+other possible value
+ font-weight:bold;
+ font-weight:bolder;
+ font-weight:lighter;
+ font-weight:100-900
+*/
+Text-decoration
+
+It sets or unsets text decorations on fonts (you'll mainly use this to unset the default underline on links when styling them.) Available values are:
+
+ text-decoration: none;
+/*
+other possible value
+ text-decoration:underline;
+ text-decoration:overline;
+ text-decoration:line-through;
+*/
+
+
+
+
+display:none
+ : hides the element with the correspondent SELECTOR. 
+display:inline
+ :enables you to make the specified HTML elements in the same line. 
+display:inline-block
+ :display blocks the same line.

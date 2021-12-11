@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: firebrick;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  .fedi{
+    width:  100% ;
+    height: 100%;
+    border: 10;
+    font-family: sans-serif;
+    background-color: brown;
+    
+
+  }
+  .bod{
+    background-color:crimson;
+  }
